@@ -25,7 +25,39 @@ export default function Footer({ setIsOpen }) {
   return (
     <div className="mx-auto w-full max-w-[900px]">
       <div className="grid w-full grid-cols-1 justify-items-start gap-y-10 whitespace-nowrap sm:grid-cols-3">
-        {/* Platform column */}
+      <div className="flex w-[120px] flex-col items-start gap-2">
+          <p className="whitespace-nowrap font-acuminSemiBold uppercase text-seaBlue-700 text-seaBlue-700 md:text-sm lg:text-base">
+            SCI Token
+          </p>
+          <Link
+            className="text-left text-gray-300 hover:text-seaBlue-700 hover:text-seaBlue-700"
+            href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x25E0A7767d03461EaF88b47cd9853722Fe05DFD3"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
+          >
+            Buy SCI{' '}
+            <FontAwesomeIcon
+              icon={faExternalLinkAlt}
+              size="xs"
+              className="ml-1"
+            />
+          </Link>
+          <Link
+            className="text-left text-gray-300 hover:text-seaBlue-700 hover:text-seaBlue-700"
+            href="/lock"
+            onClick={() => setIsOpen(false)}
+          >
+            Lock
+          </Link>
+          <Link
+            className="text-left text-gray-300 hover:text-seaBlue-700 hover:text-seaBlue-700"
+            href="/unlock"
+            onClick={() => setIsOpen(false)}
+          >
+            Unlock
+          </Link>
+        </div>
         <div className="flex w-full flex-col items-start sm:items-start gap-2">
           <p className="whitespace-nowrap font-acuminSemiBold uppercase text-orange-500 md:text-sm lg:text-base">
             Platform
