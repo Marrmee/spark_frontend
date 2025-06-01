@@ -1,0 +1,37 @@
+/* Additional styles for scrollable editor */
+.rte-editor {
+  /* Ensure the editor has proper structure for scrolling */
+  display: flex;
+  flex-direction: column;
+  /* Add margin to top and bottom to make border visible */
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.rte-menu-bar {
+  /* Keep the menu bar fixed at the top */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.rte-status-bar {
+  /* Keep the status bar fixed at the bottom */
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+}
+
+.rte-editor__container {
+  /* Enable scrolling */
+  overflow-y: auto;
+  /* Set a fixed height that can be resized */
+  height: var(--rte-editor-max-height);
+  /* Ensure content fills container */
+  display: flex;
+}
+
+.ProseMirror {
+  /* Ensure content fills container */
+  min-height: 100%;
+} 

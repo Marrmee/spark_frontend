@@ -1,0 +1,188 @@
+.buttonV2 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  z-index: 1;
+  min-width: 180px;
+  letter-spacing: 0.025em;
+}
+
+.buttonV2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+  z-index: -1;
+}
+
+.buttonV2:hover::before {
+  transform: translateX(100%);
+}
+
+.primaryButton {
+  background: linear-gradient(90deg, #ff6b00, #ff4500);
+  color: white;
+  box-shadow: 0 0 15px rgba(255, 97, 0, 0.4);
+}
+
+.primaryButton:hover {
+  box-shadow: 0 0 20px rgba(255, 97, 0, 0.6);
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  background: transparent;
+  color: #78dfec;
+  border: 2px solid #78dfec;
+  box-shadow: 0 0 10px rgba(120, 223, 236, 0.2);
+}
+
+.secondaryButton:hover {
+  background: rgba(120, 223, 236, 0.1);
+  box-shadow: 0 0 15px rgba(120, 223, 236, 0.4);
+  transform: translateY(-2px);
+}
+
+
+.tertiary {
+  @apply inline-block 
+    h-12 
+    items-center 
+    justify-center 
+    px-4 
+    py-2
+    font-acuminSemiBold 
+    text-seaBlue-700 
+    underline 
+    transition-all 
+    duration-300 
+    ease-in-out 
+    hover:cursor-pointer 
+    md:text-base 
+    md:leading-8 
+    lg:text-2xl 
+    lg:leading-9;
+}
+
+.secondary {
+  @apply flex 
+    h-12
+    w-full
+    items-center 
+    justify-center 
+    rounded-lg 
+    border-[1px] 
+    border-solid 
+    border-seaBlue-1025 
+    bg-seaBlue-300
+    font-acuminSemiBold 
+    text-seaBlue-1025 
+    shadow-xl
+    transition-all 
+    duration-300
+    ease-in-out
+    hover:cursor-pointer 
+    hover:bg-seaBlue-200 
+    hover:text-seaBlue-1025/90
+    xs:text-base 
+    md:text-lg
+    whitespace-nowrap;
+}
+
+.primary {
+  @apply flex
+    h-12 
+    w-full
+    items-center 
+    justify-center 
+    rounded-lg 
+    bg-[#1B2885]
+    /* border-[1px]
+    border-[#263AAD] */
+    text-center 
+    font-semibold 
+    text-white
+    transition-all 
+    duration-300
+    hover:bg-[#263AAD]
+    text-sm 
+    sm:text-base;
+}
+
+.primary:disabled {
+  @apply cursor-not-allowed opacity-50;
+}
+
+.primaryFixedWidth {
+  @apply flex
+    h-12 
+    min-w-[10rem]
+    items-center 
+    justify-center 
+    rounded-lg 
+    border-[1px] 
+    border-seaBlue-700
+    bg-[#1B2885]
+    font-acuminSemiBold 
+    shadow-xl 
+    transition-all
+    duration-300
+    ease-in-out
+    hover:cursor-pointer 
+    hover:bg-seaBlue-500
+    xs:text-sm 
+    sm:text-base
+    lg:text-lg;
+}
+
+.primaryNoFlex {
+  @apply h-12 
+    w-full
+    items-center 
+    justify-center 
+    rounded-lg 
+    bg-[#1B2885]
+    font-acuminSemiBold
+    shadow-xl 
+    transition-all 
+    duration-300 
+    ease-in-out
+    hover:cursor-pointer 
+    hover:bg-seaBlue-500
+    xs:py-3 
+    xs:text-base 
+    sm:py-3
+    md:text-lg;
+}
+
+.incorrectNetwork {
+  @apply flex 
+  h-12 
+  w-full 
+  cursor-pointer 
+  items-center 
+  justify-center 
+  rounded-lg 
+  whitespace-nowrap
+  bg-highlightRed
+  font-acuminSemiBold 
+  shadow-xl 
+  transition-all 
+  duration-300 
+  ease-in-out 
+  hover:bg-seaBlue-500 
+  xs:text-base 
+  md:text-lg;
+}

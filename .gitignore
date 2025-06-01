@@ -1,0 +1,71 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+react-app-env.d.ts
+.env
+.env.*
+.env.local
+.eslintignore
+/certs
+/uploads
+src/app/api/backup
+
+# database
+src/app/db/*.sql
+
+# token metadata
+/public/metadata/po-token-metadata.json
+
+# Integrity verification artifacts
+/public/integrity-manifest.json
+/public/integrity-manifest.debug.json
+
+# Specific script files to ignore (if any)
+/scripts/node_modules/
+/scripts/*.log
+
+# Security-related files and directories
+SECURITY.md
+scripts/README.md
+scripts/generate-mock-rate-limits.js
+scripts/log-security-event.js
+scripts/package-lock.json
+scripts/package.json
+scripts/security-test.js
+scripts/test-circuit-breaker.js
+scripts/test-dashboard-access.js
+scripts/test-rate-limit.sh
+scripts/test-rate-limits.js
+src/app/api/security/integrity-debug/
