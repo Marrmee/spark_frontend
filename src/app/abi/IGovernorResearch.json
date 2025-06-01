@@ -1,0 +1,60 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "member",
+        "type": "address"
+      }
+    ],
+    "name": "checkDueDiligenceRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "actionType",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "actionParams",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "ideaId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bool",
+        "name": "ndaRequired",
+        "type": "bool"
+      }
+    ],
+    "name": "propose",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "proposalId",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
